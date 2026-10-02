@@ -2603,3 +2603,381 @@ tbody tr:hover {
     padding-bottom: 35px;
   }
 }
+
+/* ================================
+   SOFTECH TECHNOLOGY AUDIT
+   ================================ */
+
+.audit-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top right, rgba(23, 105, 170, 0.12), transparent 35%),
+    #f5f7fb;
+  color: var(--foreground);
+}
+
+.audit-header {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+  padding: 22px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.audit-header .brand img {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+}
+
+.back-link {
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  color: var(--blue);
+}
+
+.audit-container {
+  width: min(920px, 92%);
+  margin: 50px auto 80px;
+}
+
+.audit-intro,
+.question-card,
+.result-card,
+.next-step {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: 0 18px 50px rgba(16, 42, 67, 0.08);
+}
+
+.audit-intro {
+  padding: 55px;
+}
+
+.audit-intro h1 {
+  max-width: 720px;
+  margin: 12px 0 18px;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: var(--navy);
+}
+
+.audit-intro > p {
+  max-width: 680px;
+  margin-bottom: 35px;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.business-form {
+  margin-top: 25px;
+}
+
+.business-form .form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.business-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.business-form input {
+  width: 100%;
+  padding: 14px 15px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fff;
+  color: var(--foreground);
+  font: inherit;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.business-form input:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(23, 105, 170, 0.12);
+}
+
+.business-form .primary-button {
+  margin-top: 25px;
+}
+
+.form-error {
+  margin: 16px 0;
+  color: var(--danger);
+  font-weight: 600;
+}
+
+/* Question */
+
+.question-section {
+  width: 100%;
+}
+
+.question-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  margin-bottom: 28px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #dce5ef;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--blue);
+  transition: width 0.3s ease;
+}
+
+.question-card {
+  padding: 55px;
+}
+
+.question-card h1 {
+  margin: 14px 0 35px;
+  max-width: 750px;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--navy);
+}
+
+.answer-list {
+  display: grid;
+  gap: 14px;
+}
+
+.answer-button {
+  width: 100%;
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fff;
+  color: var(--navy);
+  text-align: left;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.answer-button:hover:not(:disabled) {
+  border-color: var(--blue);
+  background: var(--blue-light);
+  transform: translateY(-2px);
+}
+
+.answer-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* ================================
+   AUDIT RESULT
+   ================================ */
+
+.loading-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #f5f7fb;
+  color: var(--muted);
+}
+
+.result-page {
+  min-height: 100vh;
+  padding: 50px 0 80px;
+  background:
+    radial-gradient(circle at top right, rgba(23, 105, 170, 0.12), transparent 35%),
+    #f5f7fb;
+  color: var(--foreground);
+}
+
+.result-container {
+  width: min(1000px, 92%);
+  margin: 0 auto;
+}
+
+.result-header {
+  margin: 45px 0 30px;
+}
+
+.result-header h1 {
+  margin: 12px 0 10px;
+  color: var(--navy);
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  line-height: 1.05;
+}
+
+.result-header p {
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.score-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.score-grid > div {
+  padding: 28px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(16, 42, 67, 0.06);
+}
+
+.score-grid span {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.score-grid strong {
+  display: block;
+  color: var(--navy);
+  font-size: 2.5rem;
+}
+
+.score-grid strong small {
+  margin-left: 4px;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.text-score {
+  font-size: 1.5rem !important;
+}
+
+.result-card,
+.next-step {
+  padding: 32px;
+  margin-bottom: 20px;
+}
+
+.result-card h2,
+.next-step h2 {
+  margin-bottom: 12px;
+  color: var(--navy);
+}
+
+.result-card p,
+.next-step p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.save-success,
+.save-status {
+  margin: 20px 0;
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.save-success {
+  background: #e9f8f1;
+  color: var(--success);
+}
+
+.save-status {
+  background: #fff7e6;
+  color: #946200;
+}
+
+.result-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+/* ================================
+   AUDIT MOBILE
+   ================================ */
+
+@media (max-width: 700px) {
+  .audit-header {
+    padding: 18px 0;
+  }
+
+  .audit-header .brand img {
+    height: 34px;
+  }
+
+  .audit-container {
+    margin-top: 25px;
+  }
+
+  .audit-intro,
+  .question-card {
+    padding: 28px 22px;
+    border-radius: 16px;
+  }
+
+  .business-form .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .audit-intro h1 {
+    font-size: 2.2rem;
+  }
+
+  .question-card h1 {
+    font-size: 1.8rem;
+  }
+
+  .score-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .result-page {
+    padding-top: 25px;
+  }
+
+  .result-header h1 {
+    font-size: 2.3rem;
+  }
+
+  .result-card,
+  .next-step {
+    padding: 24px;
+  }
+
+  .result-actions {
+    flex-direction: column;
+  }
+
+  .result-actions .primary-button,
+  .result-actions .secondary-button {
+    width: 100%;
+    text-align: center;
+  }
+}
